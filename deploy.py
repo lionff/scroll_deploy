@@ -14,7 +14,7 @@ randomim_koshelki = True # True or False - Перемешивание поряд
 
 scroll_w3 = Web3(Web3.HTTPProvider('https://rpc.ankr.com/scroll'))
 
-with open("res.txt", "r") as f:
+with open("privates.txt", "r") as f:
     addr_list = [row.strip() for row in f if row.strip()]
     if randomim_koshelki:
         random.shuffle(addr_list)
