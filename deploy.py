@@ -54,7 +54,7 @@ for private in addr_list:
                 pass
 
         print(f"Transaction: https://scrollscan.com/tx/{txn.hex()}")
-        time.sleep(15)
+        time.sleep(random.randint(time_ot, time_do))
 
     except Exception as err:
         print(err)
